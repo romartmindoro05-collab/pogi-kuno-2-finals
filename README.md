@@ -1,9 +1,10 @@
 #Project for IT13 Marthas Flowers
 members:
-Romart mindoro
+Romart Mindoro
 Cj Madrona
 Rafael Mindoro
 Kert Festin
+FigmaLink:https://www.figma.com/design/RE6nHGVqdGBLnAbilk5hEd
 
 ## Pages
 
