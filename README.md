@@ -8,29 +8,29 @@ FigmaLink:https://www.figma.com/design/RE6nHGVqdGBLnAbilk5hEd
 
 Pages
 
-index.html-home
-shop.html-the list
-product.html?id=peach-sky-one bouquet
-cart.html-cart drawer on every page
-wishlist.html, checkout.html, confirmation.html, about.html
+- index.html-home
+- shop.html-the list
+- product.html?id=peach-sky-one bouquet
+- cart.html-cart drawer on every page
+- wishlist.html, checkout.html, confirmation.html, about.html
 
 How the files are split
 
-js/data.js - catalog
-js/store.js - cart saved list, recent bouquets
-js/site.js - menu, search, drawer
-js/pages.js - the pages that get drawn in the browser
-css/styles.css - layout and colors
+- js/data.js - catalog
+- js/store.js - cart saved list, recent bouquets
+- js/site.js - menu, search, drawer
+- js/pages.js - the pages that get drawn in the browser
+- css/styles.css - layout and colors
 
 Product rows are grid. The header and the cards are flex. Colors and the font are CSS variables at the top of the stylesheet. Type is Plus Jakarta Sans. The big line on the home page is the display size, section titles are the headings, paragraphs are body, and the small uppercase labels are captions.
 
 Page sketches are in `design/`:
 
-00-foundations.svg
-01-homepage-desktop.svg, 02-homepage-mobile.svg
-03-shop-desktop.svg
-04-product-desktop.svg
-05-checkout-desktop.svg
+- 00-foundations.svg
+- 01-homepage-desktop.svg, 02-homepage-mobile.svg
+- 03-shop-desktop.svg
+- 04-product-desktop.svg
+- 05-checkout-desktop.svg
 
 Green is the main color (`#2f8a45`). Gold is the second (`#f0c14d`). Paper is `#f6f7f4`, ink is `#171c18`. Red `#c43b3b` is for errors. Green `#1e7a4d` is for a field that passed.
 
