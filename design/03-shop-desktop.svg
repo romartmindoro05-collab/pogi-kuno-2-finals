@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <rect width="1440" height="900" fill="#f7f8f5"/>
+  <rect width="1440" height="36" fill="#1f6a34"/>
+  <rect y="36" width="1440" height="72" fill="#ffffff"/>
+  <text x="80" y="80" font-family="Segoe UI, sans-serif" font-size="18" font-weight="800" fill="#171c18">Martha's Flowers</text>
+  <text x="80" y="160" font-family="Segoe UI, sans-serif" font-size="36" font-weight="800" fill="#171c18">Shop</text>
+  <rect x="80" y="200" width="260" height="620" rx="14" fill="#ffffff"/>
+  <text x="100" y="240" font-family="Segoe UI, sans-serif" font-size="16" font-weight="800" fill="#171c18">Filter</text>
+  <text x="100" y="280" font-family="Segoe UI, sans-serif" font-size="14" fill="#2c332e">Category</text>
+  <text x="100" y="310" font-family="Segoe UI, sans-serif" font-size="14" fill="#465047">Roses, Lilies, Pastel, Bright, Mixed</text>
+  <text x="100" y="360" font-family="Segoe UI, sans-serif" font-size="14" fill="#2c332e">Price</text>
+  <text x="100" y="400" font-family="Segoe UI, sans-serif" font-size="14" fill="#465047">$80 and under is tucked with the rest</text>
+  <text x="100" y="450" font-family="Segoe UI, sans-serif" font-size="14" fill="#2c332e">Vase shape, closed until asked</text>
+  <g fill="#ffffff">
+    <rect x="380" y="220" width="300" height="360" rx="14"/>
+    <rect x="710" y="220" width="300" height="360" rx="14"/>
+    <rect x="1040" y="220" width="300" height="360" rx="14"/>
+  </g>
+  <g fill="#f6f7f4">
+    <rect x="400" y="240" width="260" height="200" rx="10"/>
+    <rect x="730" y="240" width="260" height="200" rx="10"/>
+    <rect x="1060" y="240" width="260" height="200" rx="10"/>
+  </g>
+  <g font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#171c18">
+    <text x="400" y="470">Peach and Sky</text>
+    <text x="730" y="470">Red and Cloud</text>
+    <text x="1060" y="470">Two Hearts</text>
+  </g>
+</svg>

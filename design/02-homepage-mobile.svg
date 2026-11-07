@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="1600" viewBox="0 0 390 1600">
+  <rect width="390" height="1600" fill="#f7f8f5"/>
+  <rect width="390" height="28" fill="#1f6a34"/>
+  <rect y="28" width="390" height="64" fill="#ffffff"/>
+  <text x="20" y="66" font-family="Segoe UI, sans-serif" font-size="16" font-weight="800" fill="#171c18">Martha's Flowers</text>
+  <rect x="16" y="108" width="358" height="280" rx="16" fill="#f3f7ea"/>
+  <text x="32" y="170" font-family="Segoe UI, sans-serif" font-size="26" font-weight="800" fill="#171c18">Flowers and</text>
+  <text x="32" y="204" font-family="Segoe UI, sans-serif" font-size="26" font-weight="800" fill="#171c18">everyday bouquets.</text>
+  <rect x="32" y="230" width="150" height="44" rx="22" fill="#2f8a45"/>
+  <rect x="40" y="300" width="310" height="70" rx="10" fill="#f6d56b"/>
+  <rect x="16" y="410" width="170" height="100" rx="12" fill="#e15b64"/>
+  <rect x="204" y="410" width="170" height="100" rx="12" fill="#d4538a"/>
+  <rect x="16" y="524" width="170" height="100" rx="12" fill="#e09a3d"/>
+  <rect x="204" y="524" width="170" height="100" rx="12" fill="#2f8a45"/>
+  <text x="16" y="670" font-family="Segoe UI, sans-serif" font-size="18" font-weight="800" fill="#171c18">Today's best deals</text>
+  <rect x="16" y="690" width="358" height="280" rx="14" fill="#ffffff"/>
+  <rect x="32" y="706" width="326" height="160" rx="10" fill="#f6f7f4"/>
+  <rect x="32" y="900" width="326" height="44" rx="22" fill="#ffffff" stroke="#2f8a45"/>
+  <text x="16" y="990" font-family="Segoe UI, sans-serif" font-size="18" font-weight="800" fill="#171c18">Trending</text>
+  <rect x="16" y="1010" width="358" height="180" rx="14" fill="#e7b7c4"/>
+  <rect x="16" y="1220" width="358" height="100" rx="14" fill="#ffffff"/>
+  <rect x="16" y="1220" width="358" height="6" fill="#2f8a45"/>
+  <text x="32" y="1270" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#171c18">Same-day in town</text>
+</svg>

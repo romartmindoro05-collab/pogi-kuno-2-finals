@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <rect width="1440" height="900" fill="#f7f8f5"/>
+  <rect width="1440" height="36" fill="#1f6a34"/>
+  <rect y="36" width="1440" height="72" fill="#ffffff"/>
+  <text x="80" y="80" font-family="Segoe UI, sans-serif" font-size="18" font-weight="800" fill="#171c18">Martha's Flowers</text>
+  <text x="80" y="170" font-family="Segoe UI, sans-serif" font-size="36" font-weight="800" fill="#171c18">Where should it go?</text>
+  <g font-family="Segoe UI, sans-serif" font-size="14" fill="#465047">
+    <text x="80" y="230">Full name</text>
+    <rect x="80" y="242" width="760" height="44" rx="22" fill="#ffffff" stroke="#d9ddd4"/>
+    <text x="80" y="320">Email</text>
+    <rect x="80" y="332" width="760" height="44" rx="22" fill="#ffffff" stroke="#d9ddd4"/>
+    <text x="80" y="410">Street address</text>
+    <rect x="80" y="422" width="760" height="44" rx="22" fill="#fdecec" stroke="#c43b3b"/>
+    <text x="80" y="486" fill="#c43b3b">Add a street address.</text>
+  </g>
+  <rect x="920" y="200" width="420" height="220" rx="14" fill="#ffffff"/>
+  <text x="948" y="250" font-family="Segoe UI, sans-serif" font-size="22" font-weight="800" fill="#171c18">Pay $96</text>
+  <rect x="948" y="300" width="200" height="48" rx="24" fill="#2f8a45"/>
+  <text x="1048" y="330" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Place order</text>
+</svg>

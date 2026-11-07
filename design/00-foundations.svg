@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860">
+  <rect width="1280" height="860" fill="#eceee8"/>
+  <text x="40" y="48" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#171c18">Martha's Flowers / Foundations</text>
+  <text x="40" y="76" font-family="Segoe UI, sans-serif" font-size="14" fill="#667064">Type sizes, color tokens, and the buttons that stay easy to hit.</text>
+  <rect x="40" y="104" width="580" height="320" rx="16" fill="#ffffff"/>
+  <text x="64" y="146" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#171c18">Type</text>
+  <text x="64" y="210" font-family="Segoe UI, sans-serif" font-size="42" font-weight="800" fill="#171c18">Display</text>
+  <text x="64" y="258" font-family="Segoe UI, sans-serif" font-size="28" font-weight="800" fill="#171c18">Heading</text>
+  <text x="64" y="300" font-family="Segoe UI, sans-serif" font-size="16" fill="#2c332e">Body. Stories, form help, and the cart.</text>
+  <text x="64" y="340" font-family="Segoe UI, sans-serif" font-size="12" letter-spacing="1.4" fill="#667064">CAPTION</text>
+  <text x="64" y="384" font-family="Segoe UI, sans-serif" font-size="13" fill="#667064">Plus Jakarta Sans. Sizes in rem.</text>
+  <rect x="660" y="104" width="580" height="320" rx="16" fill="#ffffff"/>
+  <text x="684" y="146" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#171c18">Color</text>
+  <g font-family="Segoe UI, sans-serif" font-size="13" fill="#171c18">
+    <rect x="684" y="170" width="64" height="40" fill="#f6f7f4" stroke="#d9ddd4"/><text x="760" y="196">neutral 100</text>
+    <rect x="684" y="222" width="64" height="40" fill="#8d9688"/><text x="760" y="248">neutral 500</text>
+    <rect x="684" y="274" width="64" height="40" fill="#171c18"/><text x="760" y="300">neutral 900</text>
+    <rect x="684" y="326" width="64" height="40" fill="#d9ddd4"/><text x="760" y="352">line</text>
+    <rect x="960" y="170" width="64" height="40" fill="#2f8a45"/><text x="1036" y="196">primary</text>
+    <rect x="960" y="222" width="64" height="40" fill="#f0c14d"/><text x="1036" y="248">secondary</text>
+    <rect x="960" y="274" width="64" height="40" fill="#c43b3b"/><text x="1036" y="300">danger</text>
+    <rect x="960" y="326" width="64" height="40" fill="#1e7a4d"/><text x="1036" y="352">success</text>
+  </g>
+  <rect x="40" y="450" width="1200" height="360" rx="16" fill="#ffffff"/>
+  <text x="64" y="496" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#171c18">Components</text>
+  <rect x="64" y="530" width="180" height="48" rx="24" fill="#2f8a45"/>
+  <text x="154" y="560" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Add to cart</text>
+  <rect x="270" y="530" width="180" height="48" rx="24" fill="#ffffff" stroke="#2f8a45"/>
+  <text x="360" y="560" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#1f6a34">Save</text>
+  <text x="64" y="620" font-family="Segoe UI, sans-serif" font-size="14" fill="#667064">Primary targets are at least 44 by 44.</text>
+  <rect x="64" y="650" width="160" height="120" rx="12" fill="#e15b64"/>
+  <rect x="240" y="650" width="160" height="120" rx="12" fill="#d4538a"/>
+  <rect x="416" y="650" width="160" height="120" rx="12" fill="#e09a3d"/>
+  <rect x="592" y="650" width="160" height="120" rx="12" fill="#2f8a45"/>
+  <rect x="768" y="650" width="160" height="120" rx="12" fill="#3d7ec9"/>
+  <g font-family="Segoe UI, sans-serif" font-size="16" font-weight="700" fill="#ffffff">
+    <text x="144" y="718" text-anchor="middle">Roses</text>
+    <text x="320" y="718" text-anchor="middle">Lilies</text>
+    <text x="496" y="718" text-anchor="middle">Pastel</text>
+    <text x="672" y="718" text-anchor="middle">Mixed</text>
+    <text x="848" y="718" text-anchor="middle">Tall</text>
+  </g>
+</svg>
