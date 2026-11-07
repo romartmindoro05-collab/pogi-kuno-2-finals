@@ -9,8 +9,8 @@
   <text x="100" y="280" font-family="Segoe UI, sans-serif" font-size="14" fill="#2c332e">Category</text>
   <text x="100" y="310" font-family="Segoe UI, sans-serif" font-size="14" fill="#465047">Roses, Lilies, Pastel, Bright, Mixed</text>
   <text x="100" y="360" font-family="Segoe UI, sans-serif" font-size="14" fill="#2c332e">Price</text>
-  <text x="100" y="400" font-family="Segoe UI, sans-serif" font-size="14" fill="#465047">$80 and under is tucked with the rest</text>
-  <text x="100" y="450" font-family="Segoe UI, sans-serif" font-size="14" fill="#2c332e">Vase shape, closed until asked</text>
+  <text x="100" y="400" font-family="Segoe UI, sans-serif" font-size="14" fill="#465047">All prices, $80 and under, over $100</text>
+  <text x="100" y="450" font-family="Segoe UI, sans-serif" font-size="14" fill="#2c332e">Vase shape</text>
   <g fill="#ffffff">
     <rect x="380" y="220" width="300" height="360" rx="14"/>
     <rect x="710" y="220" width="300" height="360" rx="14"/>

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860">
   <rect width="1280" height="860" fill="#eceee8"/>
   <text x="40" y="48" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#171c18">Martha's Flowers / Foundations</text>
-  <text x="40" y="76" font-family="Segoe UI, sans-serif" font-size="14" fill="#667064">Type sizes, color tokens, and the buttons that stay easy to hit.</text>
+  <text x="40" y="76" font-family="Segoe UI, sans-serif" font-size="14" fill="#667064">Type, colors, and buttons.</text>
   <rect x="40" y="104" width="580" height="320" rx="16" fill="#ffffff"/>
   <text x="64" y="146" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#171c18">Type</text>
   <text x="64" y="210" font-family="Segoe UI, sans-serif" font-size="42" font-weight="800" fill="#171c18">Display</text>
@@ -27,7 +27,7 @@
   <text x="154" y="560" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Add to cart</text>
   <rect x="270" y="530" width="180" height="48" rx="24" fill="#ffffff" stroke="#2f8a45"/>
   <text x="360" y="560" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#1f6a34">Save</text>
-  <text x="64" y="620" font-family="Segoe UI, sans-serif" font-size="14" fill="#667064">Primary targets are at least 44 by 44.</text>
+  <text x="64" y="620" font-family="Segoe UI, sans-serif" font-size="14" fill="#667064">Shop bouquets and Add to cart.</text>
   <rect x="64" y="650" width="160" height="120" rx="12" fill="#e15b64"/>
   <rect x="240" y="650" width="160" height="120" rx="12" fill="#d4538a"/>
   <rect x="416" y="650" width="160" height="120" rx="12" fill="#e09a3d"/>

@@ -1,56 +1,50 @@
 # Martha's Flowers
 
-Martha's Flowers is a small imaginary flower shop. The site is static HTML, CSS, and client-side JavaScript. There is no backend. The cart, saved list, recent bouquets, checkout draft, and receipt stay in the browser.
-
-The homepage follows a department-store layout: a hero, colored category tiles, a deal row, style chips, a delivery banner, another product row, two large photos, a short bench row, and three notes. The frames for that layout are in `design/`.
+A small flower shop site. HTML, CSS, and JavaScript only. No server. The cart and saved bouquets stay in the browser.
 
 ## Setup
 
-1. Open `index.html` in a browser.
-2. Or run a static server from this folder (`npx serve`) if you want cleaner reloads.
-3. On CodeSandbox, this is a static project. Open `index.html`.
+Open `index.html`. If the browser blocks some of the scripts, run a static server in this folder (`npx serve`).
 
-No install. No API keys.
+No packages to install.
 
 ## Pages
 
-- `index.html` is the landing page.
-- `shop.html` is the product list.
-- `product.html?id=peach-sky` is a bouquet page.
-- The cart drawer is on every page. `cart.html` is the same cart as a page.
-- `wishlist.html`, `checkout.html`, `confirmation.html`, and `about.html`.
+- `index.html` home
+- `shop.html` the list
+- `product.html?id=peach-sky` one bouquet
+- `cart.html` and the cart drawer on every page
+- `wishlist.html`, `checkout.html`, `confirmation.html`, `about.html`
 
-## Files
+## How the files are split
 
-- `js/data.js` is the catalog.
-- `js/store.js` is the cart, saved list, and session. Pages listen to it instead of reloading.
-- `js/site.js` is the menu, search toggle, cart drawer, and toast.
-- `js/pages.js` draws the home grids, shop filters, bouquet page, cart, saved list, and checkout.
-- `css/styles.css` is mobile-first. The custom properties are the color and type tokens. Product rows use grid. The header, cards, and checkout columns use flex.
+- `js/data.js` catalog
+- `js/store.js` cart, saved list, recent bouquets
+- `js/site.js` menu, search, drawer
+- `js/pages.js` the pages that get drawn in the browser
+- `css/styles.css` layout and colors
 
-## Design
+Product rows are grid. The header and the cards are flex. Colors and the font are CSS variables at the top of the stylesheet. Type is Plus Jakarta Sans. The big line on the home page is the display size, section titles are the headings, paragraphs are body, and the small uppercase labels are captions.
 
-The exported frames live in `design/`. They use the same colors as the stylesheet.
+Page sketches are in `design/`:
 
-- `00-foundations.svg` — type sizes, color tokens, buttons
-- `01-homepage-desktop.svg` and `02-homepage-mobile.svg`
+- `00-foundations.svg`
+- `01-homepage-desktop.svg`, `02-homepage-mobile.svg`
 - `03-shop-desktop.svg`
 - `04-product-desktop.svg`
 - `05-checkout-desktop.svg`
 
-Type is Plus Jakarta Sans. Display is the large hero. Headings are the section titles. Body is the paragraphs. Captions are the small uppercase labels.
+Green is the main color (`#2f8a45`). Gold is the second (`#f0c14d`). Paper is `#f6f7f4`, ink is `#171c18`. Red `#c43b3b` is for errors. Green `#1e7a4d` is for a field that passed.
 
-Colors: paper `#f6f7f4`, ink `#171c18`, primary green `#2f8a45`, secondary gold `#f0c14d`, danger `#c43b3b`, success `#1e7a4d`, and neutrals 100 through 900.
+Names sit next to prices. The add-to-cart button is on the same card. The nav is Shop, Deals, What's new, and Delivery. Vase shape is under a "Vase shape" toggle on the shop page.
 
-The green buttons and the category tiles are the high-contrast pieces. Names sit with prices. Add to cart sits on the card it belongs to, and it is at least 44 by 44 pixels. The header has four links, not a long list. Vase shape is tucked in a disclosure so the shop does not open as a wall of checkboxes.
+## What you can do
 
-## What the shop does
+- Add a bouquet, change the quantity, remove it. The drawer and the cart page update together.
+- Cart, saved list, and recently viewed stay after a refresh (`martha.cart`, `martha.wishlist`, `martha.session`).
+- The checkout form and the receipt last until the tab closes (`martha.draft`, `martha.order`). The card number is not stored.
+- Search updates the list while you type. Category, price, stock, and vase filter it. Sort is featured, newest, price, or name.
+- Checkout checks the fields as you type. Test card `4242 4242 4242 4242`, any future `MM/YY`, any 3-digit CVC. The card is not billed.
+- Home and shop show gray placeholders first. Photos lower on the page wait to load. Empty cart, empty saved list, a search with no matches, and Dew Lilies (sold out) each have their own message.
 
-- Add, change quantity, and remove. The drawer, the cart page, and the count update together. The page does not reload.
-- `localStorage`: `martha.cart`, `martha.wishlist`, `martha.session` (recent bouquets and the last search).
-- `sessionStorage`: `martha.draft` (checkout fields, card number left out) and `martha.order`.
-- Shop search filters as you type. Category, price, stock, and vase filter in place. Sort covers featured, newest, price, and name.
-- Checkout checks name, email, phone, address, city, ZIP, a Luhn card number, a future expiry, and CVC while you type. A bad field says what is wrong. Test card: `4242 4242 4242 4242`, any future `MM/YY`, any 3-digit CVC. Nothing is charged.
-- Home and shop show skeletons first. Bouquet photos use `loading="lazy"`. Empty cart, empty saved list, empty search, and the sold-out lily bunch each have their own state.
-
-Dew Lilies is sold out. You can save it. You cannot add it.
+Dew Lilies can be saved. It cannot be added.

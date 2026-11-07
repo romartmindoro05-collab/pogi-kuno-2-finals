@@ -215,7 +215,7 @@
       '<button class="save' + (saved ? " is-on" : "") + '" type="button" data-wish="' + product.id + '" aria-pressed="' + saved + '">' + (saved ? "Saved" : "Save") + "</button>" +
       '<p class="help">' + (sold ? "Save it. The next stems are not in yet." : product.stock + " in the cooler today.") + "</p>" +
       '<div class="fold"><details open><summary>Care</summary><p>' + esc(product.care) + "</p></details>" +
-      "<details><summary>Delivery</summary><p>Order before noon and we can run it across town the same day. Over $80, wrapping is included. This checkout does not charge a card.</p></details></div></div></div>" +
+      "<details><summary>Delivery</summary><p>Order before noon and we can run it across town the same day. Over $80, wrapping is included.</p></details></div></div></div>" +
       '<section class="related"><h2>More in ' + esc(product.category) + '</h2><div class="product-grid">' +
       window.Martha.products.filter(function (item) { return item.category === product.category && item.id !== product.id; }).slice(0, 4).map(card).join("") +
       "</div></section>";
@@ -375,7 +375,7 @@
     }
     root.innerHTML =
       '<p class="caption">Order ' + esc(order.id) + "</p><h1>We have it, " + esc(order.name.split(" ")[0]) + ".</h1>" +
-      "<p class=\"lede\">A receipt for " + esc(order.email) + ". Nothing was charged. The flowers are imaginary, the form is not.</p>" +
+      "<p class=\"lede\">Receipt sent to " + esc(order.email) + ". The card was not billed.</p>" +
       "<ul class=\"receipt\">" + order.items.map(function (item) {
         return "<li><span>" + item.qty + " × " + esc(item.name) + "</span><span>" + money(item.line) + "</span></li>";
       }).join("") + "</ul>" +
