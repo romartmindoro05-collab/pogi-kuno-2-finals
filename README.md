@@ -1,12 +1,9 @@
-# Martha's Flowers
-
-A small flower shop site. HTML, CSS, and JavaScript only. No server. The cart and saved bouquets stay in the browser.
-
-## Setup
-
-Open `index.html`. If the browser blocks some of the scripts, run a static server in this folder (`npx serve`).
-
-No packages to install.
+#Project for IT13 Marthas Flowers
+members:
+Romart mindoro
+Cj Madrona
+Rafael Mindoro
+Kert Festin
 
 ## Pages
 
