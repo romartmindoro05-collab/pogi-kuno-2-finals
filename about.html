@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Martha's Flowers</title>
+  <meta name="description" content="What Martha's Flowers is, and how the shop stores a cart in the browser.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="about">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <p class="announce">Free wrapping on orders over $80 · Same-day if you order before noon</p>
+    <div class="bar wrap">
+      <button class="icon-btn menu-btn" type="button" data-nav-open aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"></span> Martha's Flowers</a>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="shop.html">Shop</a>
+        <a href="shop.html?price=0-80">Deals</a>
+        <a href="shop.html?sort=newest">What's new</a>
+        <a href="about.html#delivery" aria-current="page">Delivery</a>
+      </nav>
+      <form class="search" role="search" action="shop.html" method="get">
+        <label class="sr-only" for="site-search">Search bouquets</label>
+        <input id="site-search" name="q" type="search" placeholder="Search bouquets" data-header-search>
+      </form>
+      <div class="tools">
+        <button class="icon-btn search-btn" type="button" data-search-open aria-expanded="false" aria-controls="site-search">Search</button>
+        <a class="icon-btn" href="wishlist.html">Saved <span data-wish-count>0</span></a>
+        <button class="icon-btn" type="button" data-cart-open>Cart <span data-cart-count>0</span></button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap section">
+    <div class="note">
+      <p class="caption">The shop</p>
+      <h1>Martha arranges in the morning.</h1>
+      <p>Martha's Flowers is imaginary. The photos are of real bouquets. There is no account, no server, and no charge. The cart, the saved list, and the last search live in this browser.</p>
+      <section id="delivery" aria-labelledby="delivery-title">
+        <h2 id="delivery-title">Delivery</h2>
+        <p>Orders before noon go out the same day, in town only. After noon they go the next morning. Over $80, the wrap is included. Under that, it is paper and a rubber band.</p>
+      </section>
+      <section aria-labelledby="browser-title">
+        <h2 id="browser-title">What stays in the browser</h2>
+        <p><code>martha.cart</code> and <code>martha.wishlist</code> are in localStorage, so they survive a refresh. <code>martha.session</code> remembers the last few bouquets you opened and the last search. The checkout draft and the receipt are in sessionStorage, so they go away when the tab closes. The card number is not saved.</p>
+      </section>
+      <p><a class="btn btn-primary" href="shop.html">Shop bouquets</a></p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div><p class="logo"><span class="logo-mark" aria-hidden="true"></span> Martha's Flowers</p><p>A made-up flower shop.</p></div>
+      <nav class="footer-nav" aria-label="Footer"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="wishlist.html">Saved</a><a href="cart.html">Cart</a></nav>
+      <p>214 Oak Street<br>A town that is not on the map</p>
+    </div>
+    <div class="wrap"><p class="legal">© 2026 Martha's Flowers. No orders are charged.</p></div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

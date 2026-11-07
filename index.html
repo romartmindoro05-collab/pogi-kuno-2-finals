@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Martha's Flowers</title>
+  <meta name="description" content="Martha's Flowers is a small imaginary shop for roses, lilies, and mixed bouquets.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <p class="announce">Free wrapping on orders over $80 · Same-day if you order before noon</p>
+    <div class="bar wrap">
+      <button class="icon-btn menu-btn" type="button" data-nav-open aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"></span> Martha's Flowers</a>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="shop.html">Shop</a>
+        <a href="shop.html?price=0-80">Deals</a>
+        <a href="shop.html?sort=newest">What's new</a>
+        <a href="about.html#delivery">Delivery</a>
+      </nav>
+      <form class="search" role="search" action="shop.html" method="get">
+        <label class="sr-only" for="site-search">Search bouquets</label>
+        <input id="site-search" name="q" type="search" placeholder="Search bouquets" data-header-search>
+      </form>
+      <div class="tools">
+        <button class="icon-btn search-btn" type="button" data-search-open aria-expanded="false" aria-controls="site-search">Search</button>
+        <a class="icon-btn" href="wishlist.html">Saved <span data-wish-count>0</span></a>
+        <button class="icon-btn" type="button" data-cart-open>Cart <span data-cart-count>0</span></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="wrap">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">Flowers and everyday bouquets.</h1>
+          <p class="lede">Martha keeps a short bench of roses, lilies, and mixed bunches. Order before noon and we can run it across town the same day.</p>
+          <a class="btn btn-primary" href="shop.html">Shop bouquets</a>
+        </div>
+        <div class="hero-stage">
+          <img src="assets/flowers/full-garden.jpg" alt="A packed mixed bouquet of roses, daisies, and stock in a flared glass vase.">
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="cats">
+        <div class="section-head"><h2 id="cats">Shop our top categories</h2></div>
+        <div class="cat-row">
+          <a class="cat" style="background:#e15b64" href="shop.html?category=Roses"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="4" fill="#fff"/><circle cx="10" cy="16" r="3.2" fill="#fff"/><circle cx="22" cy="16" r="3.2" fill="#fff"/><circle cx="16" cy="10" r="3.2" fill="#fff"/><circle cx="16" cy="22" r="3.2" fill="#fff"/></svg>Roses</a>
+          <a class="cat" style="background:#d4538a" href="shop.html?category=Lilies"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 28c0-8 6-12 6-18 0 6 6 8 6 8s-4 2-6 6c2 0 6 2 6 6H16z" fill="#fff"/><path d="M16 28c0-8-6-12-6-18 0 6-6 8-6 8s4 2 6 6c-2 0-6 2-6 6h12z" fill="#fff"/></svg>Lilies</a>
+          <a class="cat" style="background:#e09a3d" href="shop.html?category=Pastel"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="8" fill="#fff"/></svg>Pastel</a>
+          <a class="cat" style="background:#e07a32" href="shop.html?category=Bright"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="3" fill="#fff"/><path d="M16 4v6M16 22v6M4 16h6M22 16h6M7 7l4 4M21 21l4 4M25 7l-4 4M11 21l-4 4" stroke="#fff" stroke-width="2"/></svg>Bright</a>
+          <a class="cat" style="background:#2f8a45" href="shop.html?category=Mixed"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="12" cy="14" r="4" fill="#fff"/><circle cx="20" cy="14" r="4" fill="#fff"/><circle cx="16" cy="20" r="4" fill="#fff"/></svg>Mixed</a>
+          <a class="cat" style="background:#3d7ec9" href="shop.html?vase=Tall"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M12 8h8l-1 16h-6z" fill="#fff"/></svg>Tall vases</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="deals">
+        <div class="section-head"><h2 id="deals">Today's best deals</h2><a href="shop.html?price=0-80">See all deals</a></div>
+        <div class="skeleton-grid" data-skeleton aria-hidden="true"><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div></div>
+        <div class="product-grid" data-deals></div>
+      </section>
+
+      <section class="section" aria-labelledby="styles">
+        <div class="section-head"><h2 id="styles">Choose a style</h2></div>
+        <div class="brand-row">
+          <a class="brand" href="shop.html?category=Roses"><i style="background:#e15b64">R</i> Romance</a>
+          <a class="brand" href="shop.html?category=Pastel"><i style="background:#e09a3d">P</i> Soft colors</a>
+          <a class="brand" href="shop.html?category=Bright"><i style="background:#e07a32">B</i> Bright</a>
+          <a class="brand" href="shop.html?category=Lilies"><i style="background:#d4538a">L</i> Lilies</a>
+          <a class="brand" href="shop.html?category=Mixed"><i style="background:#2f8a45">M</i> Garden mix</a>
+          <a class="brand" href="shop.html?vase=Tall"><i style="background:#3d7ec9">T</i> Tall vases</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="promo-title">
+        <div class="promo">
+          <div>
+            <h2 id="promo-title">Free delivery on orders over $80.</h2>
+            <p class="lede">In town, before noon, same day. After that it goes out the next morning. Wrapping is cotton paper and a bit of twine.</p>
+            <p style="margin-top:0.9rem"><a class="btn btn-primary" href="about.html#delivery">How delivery works</a></p>
+          </div>
+          <img src="assets/flowers/dew-lilies.jpg" alt="Close view of pink lilies with water drops on the petals.">
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="loved">
+        <div class="section-head"><h2 id="loved">Most loved this week</h2><a href="shop.html">Shop all</a></div>
+        <div class="skeleton-grid" data-skeleton aria-hidden="true"><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div></div>
+        <div class="product-grid" data-loved></div>
+      </section>
+
+      <section class="section" aria-labelledby="trend">
+        <div class="section-head"><h2 id="trend">Trending for you</h2></div>
+        <div class="trend-grid">
+          <a class="trend" href="product.html?id=full-garden">
+            <img src="assets/flowers/full-garden.jpg" alt="Full Garden, a mixed bouquet in a flared vase.">
+            <div><h3>Full Garden</h3><p>The packed one. It changes a little every week.</p></div>
+          </a>
+          <a class="trend" href="product.html?id=stargazer">
+            <img src="assets/flowers/stargazer.jpg" alt="Stargazer Column, red roses and lilies in a tall vase.">
+            <div><h3>Stargazer Column</h3><p>Roses, lilies, and a real scent.</p></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="bench">
+        <div class="section-head"><h2 id="bench">From the bench</h2></div>
+        <div class="bench-grid">
+          <a class="bench" href="product.html?id=two-hearts"><img src="assets/flowers/two-hearts.jpg" alt="Two Hearts, red roses with willow loops in a square vase."><span>Two Hearts</span></a>
+          <a class="bench" href="product.html?id=red-cloud"><img src="assets/flowers/red-cloud.jpg" alt="Red and Cloud, red roses over white hydrangea."><span>Red and Cloud</span></a>
+          <a class="bench" href="product.html?id=lily-rose"><img src="assets/flowers/lily-rose.jpg" alt="Lily and Rose, pink lilies and roses in a tall vase."><span>Lily and Rose</span></a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="help">
+        <div class="section-head"><h2 id="help">A few things before you order</h2></div>
+        <div class="service-grid">
+          <article class="service" style="--accent:#2f8a45"><h3>Same-day in town</h3><p>Order before noon. We do not ship overnight boxes.</p></article>
+          <article class="service" style="--accent:#e09a3d"><h3>Care is on the bunch</h3><p>Each product page says how long the water should last.</p></article>
+          <article class="service" style="--accent:#3d7ec9"><h3>The till is pretend</h3><p>Cart and saved bunches stay in this browser. No card is charged.</p></article>
+        </div>
+      </section>
+
+      <section class="section" data-recent hidden aria-labelledby="recent-title">
+        <div class="section-head"><h2 id="recent-title">Recently viewed</h2></div>
+        <div class="product-grid" data-recent-grid></div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div><p class="logo"><span class="logo-mark" aria-hidden="true"></span> Martha's Flowers</p><p>A made-up flower shop. The bouquets are real photos. The orders are not.</p></div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="shop.html">Shop</a><a href="about.html">About</a><a href="wishlist.html">Saved</a><a href="cart.html">Cart</a>
+      </nav>
+      <p>214 Oak Street<br>A town that is not on the map</p>
+    </div>
+    <div class="wrap"><p class="legal">© 2026 Martha's Flowers. No orders are charged.</p></div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

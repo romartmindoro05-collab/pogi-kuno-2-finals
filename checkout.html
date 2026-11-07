@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout — Martha's Flowers</title>
+  <meta name="description" content="Delivery details for a Martha's Flowers order. Nothing is charged.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="checkout">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <p class="announce">Free wrapping on orders over $80 · Same-day if you order before noon</p>
+    <div class="bar wrap">
+      <button class="icon-btn menu-btn" type="button" data-nav-open aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"></span> Martha's Flowers</a>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="shop.html">Shop</a>
+        <a href="shop.html?price=0-80">Deals</a>
+        <a href="shop.html?sort=newest">What's new</a>
+        <a href="about.html#delivery">Delivery</a>
+      </nav>
+      <form class="search" role="search" action="shop.html" method="get">
+        <label class="sr-only" for="site-search">Search bouquets</label>
+        <input id="site-search" name="q" type="search" placeholder="Search bouquets" data-header-search>
+      </form>
+      <div class="tools">
+        <button class="icon-btn search-btn" type="button" data-search-open aria-expanded="false" aria-controls="site-search">Search</button>
+        <a class="icon-btn" href="wishlist.html">Saved <span data-wish-count>0</span></a>
+        <button class="icon-btn" type="button" data-cart-open>Cart <span data-cart-count>0</span></button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap section">
+    <div class="empty" data-checkout-empty hidden>
+      <h1>Nothing to check out</h1>
+      <p>Add a bouquet first.</p>
+      <a class="btn btn-primary" href="shop.html">Browse bouquets</a>
+    </div>
+    <form class="checkout-layout" data-checkout novalidate>
+      <div class="checkout-form">
+        <p class="caption">Checkout</p>
+        <h1>Where should it go?</h1>
+        <div class="field"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required aria-describedby="name-error"><p class="field-error" id="name-error"></p></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error"><p class="field-error" id="email-error"></p></div>
+        <div class="field"><label for="phone">Phone <span class="help">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="phone-error"><p class="field-error" id="phone-error"></p></div>
+        <div class="field"><label for="address">Street address</label><input id="address" name="address" autocomplete="street-address" required aria-describedby="address-error"><p class="field-error" id="address-error"></p></div>
+        <div class="field"><label for="city">City</label><input id="city" name="city" autocomplete="address-level2" required aria-describedby="city-error"><p class="field-error" id="city-error"></p></div>
+        <div class="field"><label for="postal">ZIP code</label><input id="postal" name="postal" inputmode="numeric" autocomplete="postal-code" required aria-describedby="postal-error"><p class="field-error" id="postal-error"></p></div>
+        <fieldset>
+          <legend>Payment</legend>
+          <img class="pay-marks" src="assets/payment.jpg" alt="Accepted marks: PayPal, Visa, Mastercard, and American Express.">
+          <p class="help">Use 4242 4242 4242 4242, any future MM/YY, and any 3-digit CVC. Nothing is charged.</p>
+          <div class="field"><label for="card">Card number</label><input id="card" name="card" inputmode="numeric" autocomplete="cc-number" required aria-describedby="card-error"><p class="field-error" id="card-error"></p></div>
+          <div class="field"><label for="expiry">Expiry</label><input id="expiry" name="expiry" placeholder="MM/YY" autocomplete="cc-exp" required aria-describedby="expiry-error"><p class="field-error" id="expiry-error"></p></div>
+          <div class="field"><label for="cvc">CVC</label><input id="cvc" name="cvc" inputmode="numeric" autocomplete="cc-csc" required aria-describedby="cvc-error"><p class="field-error" id="cvc-error"></p></div>
+        </fieldset>
+      </div>
+      <aside class="pay-card">
+        <h2>Pay <span data-pay-total>$0</span></h2>
+        <p>The receipt stays in this tab. The cart stays in this browser until you place the order.</p>
+        <button class="btn btn-primary" type="submit">Place order</button>
+      </aside>
+    </form>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div><p class="logo"><span class="logo-mark" aria-hidden="true"></span> Martha's Flowers</p><p>A made-up flower shop.</p></div>
+      <nav class="footer-nav" aria-label="Footer"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="wishlist.html">Saved</a><a href="cart.html">Cart</a></nav>
+      <p>214 Oak Street<br>A town that is not on the map</p>
+    </div>
+    <div class="wrap"><p class="legal">© 2026 Martha's Flowers. No orders are charged.</p></div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

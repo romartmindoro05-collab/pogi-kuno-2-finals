@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop — Martha's Flowers</title>
+  <meta name="description" content="Browse bouquets from Martha's Flowers. Filter by category, price, and vase.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="shop">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <p class="announce">Free wrapping on orders over $80 · Same-day if you order before noon</p>
+    <div class="bar wrap">
+      <button class="icon-btn menu-btn" type="button" data-nav-open aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"></span> Martha's Flowers</a>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="shop.html" aria-current="page">Shop</a>
+        <a href="shop.html?price=0-80">Deals</a>
+        <a href="shop.html?sort=newest">What's new</a>
+        <a href="about.html#delivery">Delivery</a>
+      </nav>
+      <form class="search" role="search" action="shop.html" method="get">
+        <label class="sr-only" for="site-search">Search bouquets</label>
+        <input id="site-search" name="q" type="search" placeholder="Search bouquets" data-header-search>
+      </form>
+      <div class="tools">
+        <button class="icon-btn search-btn" type="button" data-search-open aria-expanded="false" aria-controls="site-search">Search</button>
+        <a class="icon-btn" href="wishlist.html">Saved <span data-wish-count>0</span></a>
+        <button class="icon-btn" type="button" data-cart-open>Cart <span data-cart-count>0</span></button>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <header class="page-title">
+      <p class="caption">The bench</p>
+      <h1>Shop</h1>
+    </header>
+    <div class="catalog">
+      <aside class="filters" aria-labelledby="filter-title">
+        <h2 id="filter-title">Filter</h2>
+        <form data-filters>
+          <div class="search-field">
+            <label for="catalog-search">Search</label>
+            <input id="catalog-search" data-catalog-search type="search" placeholder="Rose, lily, bowl">
+          </div>
+          <fieldset>
+            <legend>Category</legend>
+            <label><input type="checkbox" name="category" value="Roses"> Roses</label>
+            <label><input type="checkbox" name="category" value="Lilies"> Lilies</label>
+            <label><input type="checkbox" name="category" value="Pastel"> Pastel</label>
+            <label><input type="checkbox" name="category" value="Bright"> Bright</label>
+            <label><input type="checkbox" name="category" value="Mixed"> Mixed</label>
+          </fieldset>
+          <fieldset>
+            <legend>Price</legend>
+            <label><input type="radio" name="price" value="all" checked> All prices</label>
+            <label><input type="radio" name="price" value="0-80"> $80 and under</label>
+            <label><input type="radio" name="price" value="80-100"> $80 to $100</label>
+            <label><input type="radio" name="price" value="100-200"> Over $100</label>
+          </fieldset>
+          <label class="check"><input type="checkbox" name="stock" value="1"> In the cooler</label>
+          <details data-more>
+            <summary>Vase shape</summary>
+            <fieldset>
+              <legend class="sr-only">Vase shape</legend>
+              <label><input type="checkbox" name="vase" value="Bowl"> Bowl</label>
+              <label><input type="checkbox" name="vase" value="Tall"> Tall</label>
+              <label><input type="checkbox" name="vase" value="Cube"> Cube</label>
+              <label><input type="checkbox" name="vase" value="Cylinder"> Cylinder</label>
+              <label><input type="checkbox" name="vase" value="Flared"> Flared</label>
+              <label><input type="checkbox" name="vase" value="Stems"> Stems only</label>
+            </fieldset>
+          </details>
+          <button class="text-btn" type="button" data-clear>Clear filters</button>
+        </form>
+      </aside>
+      <section aria-labelledby="results-title">
+        <h2 id="results-title" class="sr-only">Bouquets</h2>
+        <div class="toolbar">
+          <p data-count aria-live="polite">Loading bouquets</p>
+          <label>Sort
+            <select data-sort>
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-asc">Price, low to high</option>
+              <option value="price-desc">Price, high to low</option>
+              <option value="name">Name, A to Z</option>
+            </select>
+          </label>
+        </div>
+        <div class="skeleton-grid" data-shop-skeleton aria-hidden="true"><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div></div>
+        <div class="product-grid" data-grid hidden></div>
+        <div class="empty" data-empty hidden>
+          <h2>Nothing matches</h2>
+          <p>Try another shelf, or clear the filters.</p>
+          <button class="btn btn-primary" type="button" data-clear>Clear filters</button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div><p class="logo"><span class="logo-mark" aria-hidden="true"></span> Martha's Flowers</p><p>A made-up flower shop.</p></div>
+      <nav class="footer-nav" aria-label="Footer"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="wishlist.html">Saved</a><a href="cart.html">Cart</a></nav>
+      <p>214 Oak Street<br>A town that is not on the map</p>
+    </div>
+    <div class="wrap"><p class="legal">© 2026 Martha's Flowers. No orders are charged.</p></div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>
